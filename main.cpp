@@ -162,7 +162,7 @@ int main() {
              {"Bogomolova Alina Vladimirovna",   {"Rabochaya",   1,  128}, "Female", 60},
              {"Ryabova Eva Makarovna",           {"Kolcevaya",   1,  128}, "Female", 2}};
     FullNameSort(HMO);
-    /*for (auto & i : HMO) {
+    for (auto & i : HMO) {
         std::cout << i.FullName << std::endl;
     }
     std::cout<<"-------------"<<std::endl;
@@ -180,7 +180,7 @@ int main() {
         if ((i.CitizenAddress.Street == InputStreet) && (i.Age < 7))
             std::cout << i.FullName << std::endl;//printing value and list of objects
     }
-    std::cout<<"-------------"<<std::endl;*/
+    std::cout<<"-------------"<<std::endl;
 
     std::vector<Citizen> BaseBinaryTest;
     OutputTextBinary(HMO);
@@ -190,7 +190,7 @@ int main() {
                   << i.CitizenAddress.FlatNumber << ' ' << i.Age << ' ' << i.Sex << std::endl;
     }
     std::cout << "-------------" << std::endl;
-    /*std::vector<Citizen> BaseTextTest(HMO.size());
+    std::vector<Citizen> BaseTextTest(HMO.size());
     "HMO 123.txt"<<HMO;
     "HMO 123.txt">>BaseTextTest;
     for (auto &i:BaseTextTest) {
@@ -198,6 +198,6 @@ int main() {
                   << i.CitizenAddress.FlatNumber << ' ' << i.Age << ' ' << i.Sex << std::endl;
     }
     std::cout<<"-------------"<<std::endl;
-    */
+    
     return 0;
 }
